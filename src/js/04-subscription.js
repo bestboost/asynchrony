@@ -1,8 +1,9 @@
-import '../css/common.css';
-import BSN from 'bootstrap.native';
+// import '../css/common.css';
+const BSN = require("bootstrap.native")
 
 const modal = new BSN.Modal('#subscription-modal');
-console.log("modalInitJS:", modal)
+console.log( modal);
+modal.show()
 
 // const PROMPT_DELAY = 1500;
 // const MAX_PROMPT_ATTEMPTS = 3;
