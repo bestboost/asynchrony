@@ -1,12 +1,28 @@
-// import '../css/common.css';
-const BSN = require("bootstrap.native")
+import '../css/common.css';
+const BSN = require("bootstrap.native");
 
 const modal = new BSN.Modal('#subscription-modal');
-console.log( modal);
-modal.show()
+console.log(modal);
 
-// const PROMPT_DELAY = 1500;
-// const MAX_PROMPT_ATTEMPTS = 3;
+const refs = {
+     modal: document.querySelector('#subscription-modal')
+}
+refs.modal.addEventListener('hide.bs.modal', () => {
+     setTimeout(() => {
+          console.log('Открываем модалку')
+          modal.show()
+     }, PROMPT_DELAY);
+} );
+
+const PROMPT_DELAY = 1500;
+const MAX_PROMPT_ATTEMPTS = 3;
+
+setTimeout(() => {
+     console.log('Открываем модалку')
+     modal.show()
+}, PROMPT_DELAY);
+
+
 
 // let promptCounter = 0;
 // let hasSubscribed = false;
