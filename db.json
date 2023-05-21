@@ -162,6 +162,24 @@
       ],
       "rating": 10,
       "id": 24
+    },
+    {
+      "title": "Тестовая книна HTML",
+      "author": "Я",
+      "genres": [
+        "HTML"
+      ],
+      "rating": 8,
+      "id": 25
+    },
+    {
+      "title": "Тестовая книна CSS",
+      "author": "Я",
+      "genres": [
+        "CSS"
+      ],
+      "rating": 7,
+      "id": 26
     }
   ]
 }
